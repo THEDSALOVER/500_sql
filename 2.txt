@@ -1,0 +1,89 @@
+1 . Write a SQL statement that displays all the information about all salespeople.
+
+  ans :
+  select * from table_name
+ 
+ 2. Write a SQL statement to display a string "This is SQL Exercise, Practice and Solution".
+  ans: 
+  
+  select " ha bhai kaha tha na"
+  
+ 3.Write a SQL query to display three numbers in three columns.
+ ans: 
+ 
+  select 1,2,4
+  4: Write a SQL query to display the sum of two numbers 10 and 15 from the RDBMS server.
+  ans: 
+    select 10+15
+  5: Write an SQL query to display the result of an arithmetic expression.
+  Ans:
+  
+  select 4+59-45*34
+  6: Write a SQL statement to display specific columns such as names and commissions for all salespeople
+    Ans: 
+    
+    select names,commission from salesman
+  7: Write a query to display the columns in a specific order, such as order date, salesman ID, order number, and purchase amount for all orders.
+    Ans: 
+    note: sql print left to right 
+    select order_data,id,order_data,amount from table_name
+    
+  8:From the following table, write a SQL query to identify the unique salespeople ID. Return salesman_id
+  Ans: 
+  select distrint(dalesman_id) from table_name;
+  
+  9: From the following table, write a SQL query to locate salespeople who live in the city of 'Paris'. Return salesperson's name, city
+   Ans: 
+  select name from table_name where city ='Paris'
+  10: From the following table, write a SQL query to find customers whose grade is 200. Return customer_id, cust_name, city, grade, salesman_id. 
+   Ans: 
+   
+  select customer_id,cust_name,city,grade,salesman_id where grade=200
+  11:  From the following table, write a SQL query to find orders that are delivered by a salesperson with ID. 5001. Return ord_no, ord_date, purch_amt.  
+      
+      ans: select ord_no,ord_date,purch_amt where salesman_id=5001
+ 
+ 12. From the following table, write a SQL query to find the Nobel Prize winner(s) for the year 1970. Return year, subject and winner.
+ 
+ ans: 
+ select WINNER from table_name where year =1970
+ 
+13. From the following table, write a SQL query to find the Nobel Prize winner in ‘Literature’ for 1970. Return winner.
+  ans: 
+ select winner from table_name where (Subject="Literature" and year="1970"
+ 
+ 14. From the following table, write a SQL query to locate the Nobel Prize winner ‘Dennis Gabor'. Return year, subject.
+   ans: 
+  select year, subject from table_name where  winner='Dennis Gabor"
+  
+  15. From the following table, write a SQL query to find the Nobel Prize winners in the field of ‘Physics’ since 1950. Return winner. 
+  ans:
+ select winner form table where subject ="Physics" and year>=1950
+ 
+ 16. From the following table, write a SQL query to find the Nobel Prize winners in ‘Chemistry’ between the years 1965 and 1975. Begin and end values are included. Return year, subject, winner, and country. 
+  Ans: 
+  select year,subject,winner,country from table_name where subject="Chemistry" and  year in between 1965 and 1975
+  
+ 17. Write a SQL query to display all details of the Prime Ministerial winners after 1972 of Menachem Begin and Yitzhak Rabin.
+ 
+ Ans" 
+ 
+ 
+ 
+18. From the following table, write a SQL query to retrieve the details of the winners whose first names match with the string ‘Louis’. Return year, subject, winner, country, and category. 
+
+Ans: 
+  
+select * from table where  name like "Louis%";
+
+
+ 
+  
+  
+ 
+ 
+  
+  
+    
+  
+ 
